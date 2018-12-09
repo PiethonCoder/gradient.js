@@ -1,0 +1,90 @@
+body,
+html,
+    {
+    height: 100%;
+}
+
+main {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+#test1 {
+    height: 600px;
+    width: 50%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    animation: AnimationName 2s ease infinite;
+
+}
+
+
+#test2 {
+    height: 600px;
+    width: 50%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+
+#test3 {
+    height: 600px;
+    width: 50%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+
+@-webkit-keyframes morph {
+    0% {
+        background-position: 0% 73%
+    }
+
+    50% {
+        background-position: 100% 28%
+    }
+
+    100% {
+        background-position: 0% 73%
+    }
+}
+
+@-moz-keyframes morph {
+    0% {
+        background-position: 0% 73%
+    }
+
+    50% {
+        background-position: 100% 28%
+    }
+
+    100% {
+        background-position: 0% 73%
+    }
+}
+
+@keyframes morph {
+    0% {
+        background-position: 0% 73%
+    }
+
+    50% {
+        background-position: 100% 28%
+    }
+
+    100% {
+        background-position: 0% 73%
+    }
+}
