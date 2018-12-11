@@ -752,19 +752,19 @@ function makeGradient(colorList, m) {
 
 //parse class string 
 function findColor(elm) {
-    wc_class = "";
+    g_class = "";
 
     //find the water color class if there are mutiple classes 
     var classes = elm.attr("class").split(' ');
     for (var x in classes) {
         x = classes[x]
-        if (x.startsWith("g-") || x.startsWith("gradient-") || x.startsWith("gc-")) {
-            wc_class = x
+        if (x.startsWith("g-") || x.startsWith("gradient-") || x.startsWith("gc-") || x.startsWith("gradientComp-")) {
+            g_class = x
         }
     }
 
     //find all the colors 
-    var colorArray = (wc_class.split("-").slice(1))
+    var colorArray = (g_class.split("-").slice(1))
 
     //what?
     if (colorArray[0] == "") {
@@ -789,10 +789,9 @@ function fontColor(cl) {
     return f_color
 }
 
-function animate(t) {
-    console.log(1)
-    t.css("animation", "morph 6s ease infinite;")
-}
+//function animate(t) {
+//    t.css("animation", "morph 6s ease infinite;")
+//}
 
 //main function 
 function run(obj, mode = "") {
@@ -807,37 +806,38 @@ function run(obj, mode = "") {
 }
 
 //pull all the gradient elements 
-var wc = $("[class^=gradient-]")
+var g = $("[class*=gradient-]")
 
-$("[class^=g-]").map(function() {
-    wc.push(this)
+$("[class*=g-]").map(function() {
+    console.log(1)
+    g.push(this)
 })
 
 $(".g").map(function() {
-    wc.push(this)
+    g.push(this)
 })
 
 $(".gradient").map(function() {
-    wc.push(this)
+    g.push(this)
 })
 
 //gradient complement 
-var gc = $("[class^=gc-]")
-$("[class^=gradientComp-]").map(function() {
+var gc = $("[class*=gc-]")
+$("[class*=gradientComp-]").map(function() {
     gc.push(this)
 })
 
-var ga = $(".ga")
+//var ga = $(".ga")
 
 //run .5 after load 
 setTimeout(function() {
-    wc.map(function() {
+    g.map(function() {
         run($(this))
     })
     gc.map(function() {
         run($(this), "gc")
     })
-    ga.map(function() {
-        animate($(this))
-    })
+    // ga.map(function() {
+    //        animate($(this))
+    //    })
 }, 10)
