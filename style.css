@@ -9,8 +9,8 @@ a {
     color: inherit;
 }
 
-*{
-	font-family: 'Mali', cursive;
+* {
+    font-family: 'Source Code Pro', monospace;
 }
 
 main {
@@ -42,6 +42,18 @@ main {
     text-align: center;
     line-height: 50px;
     background-color: red;
+}
+
+#cdn {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+#links {
+    height: 80%;
+    width: 80%;
+    border-radius: 25px;
 }
 
 
