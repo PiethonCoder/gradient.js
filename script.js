@@ -829,8 +829,8 @@ $("[class*=gradientComp-]").map(function() {
 
 //var ga = $(".ga")
 
-//run .5 after load 
-setTimeout(function() {
+//on page load 
+$(function(){
     g.map(function() {
         run($(this))
     })
@@ -840,4 +840,4 @@ setTimeout(function() {
     // ga.map(function() {
     //        animate($(this))
     //    })
-}, 10)
+})
