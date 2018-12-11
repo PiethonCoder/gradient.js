@@ -3,21 +3,118 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.min.js"></script>
     <title>gradient.js</title>
 </head>
 
 <body>
     <main>
-        <div id="test1" class="gradient ga">
-            <h1 style="text-align:center;font-size:4em;">hello world</h1>
-        </div>
-        <div id="test2" class="g-blue asdas asdas">
-            <h1 style="text-align:center;font-size:4em;color:pink">hello world</h1>
-        </div>
-        <div id="test3" class="g">
-            <h1 style="text-align:center;font-size:4em;">hello world</h1>
-        </div>
+        <section id="hero" class="g">
+            <h1>Gradient.js</h1>
+            <p><b>clean, lean, fresh, easy, adjectives; all the things your website needs.</b></p>
+            <a href="#">
+                <div id="download" class="g">
+                    <h3>Download</h3>
+                </div>
+            </a>
+        </section>
+        <section class="infoB">
+            <div class="f ">
+                <div class="g-pink-aqua s-egg " style="margin:5px;"></div>
+                <div class="g-pink-aqua s-egg " style="margin:5px;"></div>
+                <div class="g-pink-aqua s-egg " style="margin:5px;"></div>
+                <div class="g-pink-aqua s-egg " style="margin:5px;"></div>
+            </div>
+            <div class="g-white-#2196F3 f fc" style="text-align:center;">
+                <h1 style="color:#2196F3">Basic Syntax</h1>
+                <p><span style="color:#2196F3"><b>gradient.js</b></span> lets you give dynamic gradient backgrounds to elements with ease.<br>By using the <span style="color:#2196F3"><b>gradient</b></span> class, or shorthand you can just put <span style="color:#2196F3">g</span>, along with any colors you want,<br> like <span style="color:#2196F3"><b>g-pink-aqua</b></span>, the brower will render a unique gradient pattern on every page load.</p>
+                <code>
+                    <pre>&lt;div class=&quot;g-pink-aqua&quot;&gt;&lt;/div&gt;</pre>
+                    <pre>&lt;div class=&quot;gradient-pink-aqua&quot;&gt;&lt;/div&gt;</pre>
+                </code>
+            </div>
+        </section>
+        <section class="infoB">
+            <div style="text-align:center;" class="g-white-#3f51b5 f fc">
+                <h1 style="color:#3f51b5">Color Values</h1>
+                <p><span style="color:#3f51b5"><b>Keyword</b></span>, <span style="color:#3f51b5"><b>hex</b></span>,<span style="color:#3f51b5"><b>rgb</b></span>, and <span style="color:#3f51b5"><b>hsl</b></span> colors all work, as long as they dont contain a space.</p>
+                <code>
+                    <pre>&lt;div class=&quot;g-blue-pink&quot;&gt;&lt;/div&gt;</pre>
+                    <pre>&lt;div class=&quot;g-#0000ff-#ffc0cb&quot;&gt;&lt;/div&gt;</pre>
+                    <pre>&lt;div class=&quot;g-rgb(255,192,203)-rgb(0,0,255)&quot;&gt;&lt;/div&gt;</pre>
+                    <pre>&lt;div class=&quot;g-hsl(350,100%,88%)-hsl(240,100%,50%)&quot;&gt;&lt;/div&gt;</pre>
+                </code>
+            </div>
+            <div class="f">
+                <div class="g-blue-pink s-rabbet " style="margin:5px;"></div>
+                <div class="g-#0000ff-#ffc0cb s-rabbet" style="margin:5px;"></div>
+                <div class="g-rgb(255,192,203)-rgb(0,0,255) s-rabbet" style="margin:5px;"></div>
+                <div class="g-hsl(350,100%,88%)-hsl(240,100%,50%) s-rabbet" style="margin:5px;"></div>
+            </div>
+        </section>
+
+        <section class="infoB">
+            <div class="f">
+                <div class="gc-pink s-circle"></div>
+            </div>
+            <div style="text-align:center;" class="g-white-#ffc107 f fc">
+                <h1 style="color:#ffc107">Color Complements</h1>
+                <p>The <span style="color:#ffc107"><b>gc</b></span> class will find the complementary color for whatever color its given.</p>
+                <code>
+                    <pre>&lt;div class=&quot;gc-pink&quot;&gt;&lt;/div&gt;</pre></code>
+            </div>
+        </section>
+        <section class="infoB">
+            <div style="text-align:center;" class="g-white-#4caf50 f fc">
+                <h1 style="color:#4caf50">Solo Color</h1>
+                <p>if the <span style="color:#4caf50"><b>g</b></span> class is only given one color, it makes a gradient with shades of that color.</p>
+                <code>
+                    <pre>&lt;div class=&quot;g-red&quot;&gt;&lt;/div&gt;</pre>
+                    <pre>&lt;div class=&quot;g-blue&quot;&gt;&lt;/div&gt;</pre>
+                    <pre>&lt;div class=&quot;g-yellow&quot;&gt;&lt;/div&gt;</pre>
+                    <pre>&lt;div class=&quot;g-orange&quot;&gt;&lt;/div&gt;</pre>
+                </code>
+            </div>
+            <div class="f">
+                <div class="g-red s-x" style="margin:2px;"></div>
+                <div class="g-blue s-x" style="margin:2px;"></div>
+                <div class="g-yellow s-x" style="margin:2px;"></div>
+                <div class="g-orange s-x" style="margin:2px;"></div>
+            </div>
+        </section>
+        <section class="infoB">
+            <div class="f">
+                <div class="g-crimson-teal-pink-orange s-rhombus" style="margin:5px;"></div>
+                <div class="g-steelblue-purple-black s-rhombus" style="margin:5px;"></div>
+                <div class="g-#FF6B6B-#556270-#FFA17F s-rhombus" style="margin:5px;"></div>
+            </div>
+            <div style="text-align:center;" class="g-white-#e91e63 f fc">
+                <h1 style="color:#e91e63">Multi Color</h1>
+                <p>There isint any limit to how many colors can be added.</p>
+                <code>
+                    <pre>&lt;div class=&quot;g-crimson-teal-pink-orange&quot;&gt;&lt;/div&gt;</pre>
+                    <pre>&lt;div class=&quot;g-steelblue-purple-black&quot;&gt;&lt;/div&gt;</pre>
+                    <pre>&lt;div class=&quot;g-#FF6B6B-#556270-#FFA17F&quot;&gt;&lt;/div&gt;</pre>
+                </code>
+            </div>
+
+        </section>
+        <section class="infoB">
+            <div style="text-align:center;" class="g-white-#f33325 f fc">
+                <h1 style="color:#f33325">Random Colors</h1>
+                <p>You can generate a <span style="color:#f33325"><b>random</b></span> color combination if you just <span style="color:#f33325"><b>omit</b></span> any colors from the gradient class.</p>
+                <code>
+                    <pre>&lt;div class=&quot;g&quot;&gt;&lt;/div&gt;</pre></code>
+            </div>
+            <div class="f">
+                <div class="s-hex g" style="margin:5px;"></div>
+                <div class="s-hex g" style="margin:5px;"></div>
+                <div class="s-hex g" style="margin:5px;"></div>
+            </div>
+        </section>
+
+
     </main>
 </body>
 

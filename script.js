@@ -840,4 +840,4 @@ setTimeout(function() {
     ga.map(function() {
         animate($(this))
     })
-}, 500)
+}, 10)
